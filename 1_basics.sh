@@ -1,6 +1,8 @@
 yum install -y git openssh wget sudo bash-completion vim unzip
 
-ssh-keygen #and copy key to github
+echo 'run ssh-keygen and copy to github or whatever source control you are using'
+ssh-keygen 
 
-#git config --global user.email "jacob@techmonkey.pro"
-#git config --global user.name "Jacob Ramsey"
+echo 'you should configure git'
+echo 'git config --global user.email "jacob@techmonkey.pro"'
+echo 'git config --global user.name "Jacob Ramsey"'
