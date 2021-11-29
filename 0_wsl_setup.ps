@@ -1,0 +1,11 @@
+#Currently playing with RHWSL
+
+#https://github.com/yosukes-dev/RHWSL
+#Follow the instructions to download, unzip, and install
+
+./RHWSL.exe
+wsl --set-version RHWSL 2
+wsl --setdefault RHWSL
+./RHWSL.exe run useradd -m -g users -G wheel -s /bin/bash jramsey
+./RHWSL.exe config --default-user jramsey
+./RHWSL.exe run passwd jramsey
