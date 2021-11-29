@@ -1,5 +1,10 @@
+#Install dependencies - https://github.com/pyenv/pyenv/wiki#suggested-build-environment
+sudo dnf install make gcc zlib-devel bzip2 bzip2-devel readline-devel sqlite sqlite-devel openssl-devel tk-devel libffi-devel xz-devel
+
+#Install pyenv - https://github.com/pyenv/pyenv
 curl https://pyenv.run | bash
 
+#Only run once - add needed paths to profile
 sed -Ei -e '/^([^#]|$)/ {a \
 export PYENV_ROOT="$HOME/.pyenv"
 a \
