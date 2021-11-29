@@ -1,4 +1,4 @@
-yum install -y git openssh wget sudo bash-completion vim 
+yum install -y git openssh wget sudo bash-completion vim unzip
 
 ssh-keygen #and copy key to github
 
