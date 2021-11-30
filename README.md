@@ -1,7 +1,6 @@
 # wsl_dev
-Configure a WSL based dev environment for integration with VS Code.
-
-I chose to use a RedHat based distribution for the sake of similiarity to production environments.
+Configure a RedHat based WSL dev environment for integration with VS Code.
+This includes Podman to run Docker containers, AWS cloud devops tools (CDK + Terraform), and Python Developement (pyenv + poetry)
 
 Some key articles this is based on:  
 [Python Best Practice](https://mitelman.engineering/blog/python-best-practice/automating-python-best-practices-for-a-new-project/)  
