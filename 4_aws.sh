@@ -18,3 +18,8 @@ sudo dnf module install -y nodejs:16
 sudo npm install --no-bin-links -g aws-cdk
 cdk --version
 
+# aws ssm
+cd /tmp/
+curl "https://s3.amazonaws.com/session-manager-downloads/plugin/latest/linux_64bit/session-manager-plugin.rpm" -o "session-manager-plugin.rpm"
+sudo yum install -y session-manager-plugin.rpm
+session-manager-plugin
