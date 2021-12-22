@@ -18,6 +18,16 @@ sudo dnf module install -y nodejs:16
 sudo npm install --no-bin-links -g aws-cdk
 cdk --version
 
+# ####
+# cdk 1 and 2 in tandem
+npx aws-cdk@1.x init app --language typescript
+npx aws-cdk@2.x init app --language typescript
+
+
+#Put in .bashrc
+alias cdk=npx aws-cdk@1.x
+alias cdk2=npx aws-cdk@2.x
+
 # aws ssm
 cd /tmp/
 curl "https://s3.amazonaws.com/session-manager-downloads/plugin/latest/linux_64bit/session-manager-plugin.rpm" -o "session-manager-plugin.rpm"
